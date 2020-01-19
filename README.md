@@ -9,7 +9,7 @@ In the project directory, run
 then navigate to front-end directory and run
 
 ### `npm start`
-`
+
 ## Available Scripts
 
 In the project directory, you can run:
