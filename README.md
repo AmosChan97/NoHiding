@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), together with [YOLO object recognition](https://github.com/llSourcell/YOLO_Object_Detection)
 
+## Hardware used
+Raspberry Pi B and PiCam
+
 ## Quick Start
 
 In the project directory, run
