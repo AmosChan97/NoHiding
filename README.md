@@ -8,7 +8,7 @@ In the project directory, run
 
 then navigate to front-end directory and run
 
-### `npm start
+### `npm start`
 `
 ## Available Scripts
 
