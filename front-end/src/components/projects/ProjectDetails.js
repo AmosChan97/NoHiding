@@ -4,7 +4,8 @@ import { bindActionCreators } from 'redux';
 import { fetchPingData } from '../../store/actions/projectActions';
 import { fetchAP } from '../../store/actions/chartActions';
 import piLogo from '../../img/raspberrypi_logo.png'
-
+import aiImage from '../../img/aiImage.jpg'
+import aiData from '../../img/aiData.json'
 /**
  * Specific details for each Pi Project */ class ProjectDetails extends Component {
   constructor(props) {
@@ -60,12 +61,12 @@ import piLogo from '../../img/raspberrypi_logo.png'
                     <span className="card-title">{project[ind].title}</span>
                     <p>{project[ind].content}</p>
                     <p> Sensor Status: <span className="green-text text-darken-2"> Online</span></p>
-                    <p>Capacity: <span className="red-text text-darken-2"> 67</span></p>
+                    <p>Capacity: <span className="red-text text-darken-2"> {aiData}</span></p>
                   </div>
                 </div>
               </div>
             </div>
-            <h1 className="white-text">SCREENSHOT</h1>
+            <img src={aiImage}></img>
           </div>
         </div>
       )

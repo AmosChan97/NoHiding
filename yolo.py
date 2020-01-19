@@ -9,7 +9,7 @@ import os
 # load the COCO class labels our YOLO model was trained on
 labelsPath = os.path.abspath("yolo-coco/coco.names")
 LABELS = open(labelsPath).read().strip().split("\n")
- 
+
 # initialize a list of colors to represent each possible class label
 np.random.seed(42)
 COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),
@@ -75,23 +75,26 @@ while True:
         classIDs.append(classID)
 
   idxs = cv2.dnn.NMSBoxes(boxes, confidences, 0, 50)
-
+  people_count = 0
   if len(idxs) > 0:
 	# loop over the indexes we are keeping
-	for i in idxs.flatten():
-		# extract the bounding box coordinates
-		(x, y) = (boxes[i][0], boxes[i][1])
-		(w, h) = (boxes[i][2], boxes[i][3])
- 
-		# draw a bounding box rectangle and label on the image
-		color = [int(c) for c in COLORS[classIDs[i]]]
-		cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
-		text = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
-		cv2.putText(img, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX,
-			0.5, color, 2)
- 
+    for i in idxs.flatten():
+      # extract the bounding box coordinates
+      (x, y) = (boxes[i][0], boxes[i][1])
+      (w, h) = (boxes[i][2], boxes[i][3])
+  
+      # draw a bounding box rectangle and label on the image
+      color = [int(c) for c in COLORS[classIDs[i]]]
+      cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
+      text = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
+      if LABELS[classIDs[i]] == "person":
+        people_count += 1
+
+      cv2.putText(img, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+  
 # show the output image
   cv2.imshow("Image", img)
+  print(people_count)
 
   ch = cv2.waitKey(1)
   if ch == 27:
