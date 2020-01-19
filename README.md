@@ -1,8 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), together with [YOLO object recognition](https://github.com/llSourcell/YOLO_Object_Detection)
 
+## Quick Start
+
+In the project directory, run
+
+### `python3 piyolo.py`
+
+then navigate to front-end directory and run
+
+### `npm start
+`
 ## Available Scripts
 
 In the project directory, you can run:
+
 
 ### `yarn start`
 
