@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), together with [yolo object recognition](https://github.com/llSourcell/YOLO_Object_Detection)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), together with [YOLO object recognition](https://github.com/llSourcell/YOLO_Object_Detection)
 
 ## Available Scripts
 
