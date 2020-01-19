@@ -5,7 +5,7 @@ import cv2
 import os
 from picamera.array import PiRGBArray
 from picamera import PiCamera
-
+import json
 
 # load the COCO class labels our YOLO model was trained on
 labelsPath = os.path.abspath("yolo-coco/coco.names")
@@ -99,7 +99,9 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
       cv2.putText(img, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
   
 # show the output image
-  cv2.imwrite("image.jpg", img)
+  cv2.imwrite("/home/pi/NoHiding/front-end/src/img/aiImage.jpg", img)
+  with open('/home/pi/NoHiding/front-end/src/img/aiData.json', 'w') as json_file:
+      json.dump(people_count, json_file)
   print(people_count)
 
   rawCapture.truncate(0)
