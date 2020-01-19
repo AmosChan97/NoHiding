@@ -51,7 +51,7 @@ import piLogo from '../../img/raspberrypi_logo.png'
         <div>
           <div className="center center-align project-details">
             <div className="row">
-              <div className="card white col s12">
+              <div className="card grey col s12">
                 <div className="card-content center">
                   <div className="center-align">
                     <img src={piLogo} className="left center-align col" alt="Pi_Logo" style={{ width: 170, height: 120 }}></img>
@@ -65,7 +65,7 @@ import piLogo from '../../img/raspberrypi_logo.png'
                 </div>
               </div>
             </div>
-            <h1>SCREENSHOT</h1>
+            <h1 className="white-text">SCREENSHOT</h1>
           </div>
         </div>
       )

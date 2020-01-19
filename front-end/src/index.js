@@ -7,6 +7,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
 import thunk from 'redux-thunk';  
+import ai_image from './img/ai_image.jpg'
 
 // best place to place the store, middle ware enhancers the base redux store
 const store = createStore(rootReducer, applyMiddleware(thunk));

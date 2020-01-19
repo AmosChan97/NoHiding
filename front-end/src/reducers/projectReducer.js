@@ -7,7 +7,9 @@ const initState = {
     { id: '5', title: "DUMMY", content: "shalara" },
     { id: '6', title: "DUMMY", content: "shalara" },
     { id: '7', title: "DUMMY", content: "shalara" },
-    { id: '8', title: "DUMMY", content: "shalara" }],
+    { id: '8', title: "DUMMY", content: "shalara" },
+    { id: '9', title: "DUMMY", content: "shalara" }
+  ],
   data: []
 }
 

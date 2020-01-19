@@ -9,8 +9,8 @@ import amos from '../../img/Amos.png';
 const About = () => {
   return (
     <div className="container">
-      <h4 className="center">Checks the crowd level of your favourite study areas before going there!</h4>
-      <h5 style={{padding: 20}} className="center">Proudly brought to you by our hackathon members:</h5>
+      <h4 className="center white-text">Checks the crowd level of your favourite study areas before going there!</h4>
+      <h5 style={{padding: 20}} className="center white-text">Proudly brought to you by our hackathon members:</h5>
       <div className="row">
         <img src={weiyang} className="left center-align col" alt="photo" style={{ width: 500, height: 400 }}></img>
         <img src={iman} className="left center-align col" alt="photo" style={{ width: 500, height: 400 }}></img>
