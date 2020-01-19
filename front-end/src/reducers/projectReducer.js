@@ -1,7 +1,7 @@
 const initState = {
   projects: [
-    { id: '1', title: "COM1 BASEMENT", content: "Sensor Placed at Level 3 Office" },
-    { id: '2', title: "CENTRAL LIBRARY LEVEL 1", content: "shalara" },
+    { id: '1', title: "Tembusu Hall", content: "Sensor on table" },
+    { id: '2', title: "DUMMY", content: "shalara" },
     { id: '3', title: "DUMMY", content: "shalara" },
     { id: '4', title: "DUMMY", content: "shalara" },
     { id: '5', title: "DUMMY", content: "shalara" },

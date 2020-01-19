@@ -18,11 +18,11 @@ class NavBar extends Component {
     return (
       <nav className="nav-wrapper z-depth-0 grey darken-3">
         <div className="container">
-          <Link to="/" className="brand-logo">No Hiding</Link>
+          <Link to="/" className="brand-logo amber-text">No Hiding</Link>
         </div>
         <div className="container">
           <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <Link to="/About" style={{fontSize:30}} className="right">About</Link>
+            <Link to="/About" style={{fontSize:30}} className="right amber-text">About</Link>
           </ul>
         </div>
       </nav>

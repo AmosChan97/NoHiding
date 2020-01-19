@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import ProjectList from '../projects/ProjectList';
 import { connect } from 'react-redux';
-import ai_image from '../../img/ai_image.jpg'
 class Dashboard extends Component {
   render() {
     const {projects} = this.props;
     return (
-      <div className="dashboard container" style={{backgroundImage: `url(${ai_image})`}}>
+      <div className="dashboard container">
         <div className="row">
           <ProjectList projects={projects}/>
         </div>

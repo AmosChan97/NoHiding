@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchPingData } from '../../store/actions/projectActions';
 import { fetchAP } from '../../store/actions/chartActions';
-import piLogo from '../../img/raspberrypi_logo.png'
+import tembusuLogo from '../../img/tembusu.jpg'
 import aiImage from '../../img/aiImage.jpg'
 import aiData from '../../img/aiData.json'
 /**
@@ -55,13 +55,13 @@ import aiData from '../../img/aiData.json'
               <div className="card grey col s12">
                 <div className="card-content center">
                   <div className="center-align">
-                    <img src={piLogo} className="left center-align col" alt="Pi_Logo" style={{ width: 170, height: 120 }}></img>
+                    <img src={tembusuLogo} className="left center-align col" alt="Pi_Logo" style={{ width: 170, height: 120 }}></img>
                   </div>
                   <div>
                     <span className="card-title">{project[ind].title}</span>
                     <p>{project[ind].content}</p>
                     <p> Sensor Status: <span className="green-text text-darken-2"> Online</span></p>
-                    <p>Capacity: <span className="red-text text-darken-2"> {aiData}</span></p>
+                    <p>Crowd level: <span className="text-darken-2"> {aiData} people</span></p>
                   </div>
                 </div>
               </div>
