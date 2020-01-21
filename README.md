@@ -6,6 +6,8 @@ This project was made for the Hack and Roll 2020 Hackathon from 18th January - 1
 
 The team members are [Amos](https://github.com/AmosChan97), [Wei Yang](https://github.com/MeLoveCarbs) and [Iman](https://github.com/namiwa)
 
+Visit our project post on [Devpost](https://devpost.com/software/nohiding) to learn more about our journey in this!
+
 ## Hardware used
 Raspberry Pi B and PiCam
 
