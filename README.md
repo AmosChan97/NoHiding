@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), together with [YOLO object recognition](https://github.com/llSourcell/YOLO_Object_Detection)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), together with [YOLO object recognition](https://pjreddie.com/darknet/yolo/)
+
+Credits to [pjreddie](https://github.com/pjreddie) for the open-sourced pre-trained models used for object detection.
+
+This project was made for the Hack and Roll 2020 Hackathon from 18th January - 19th January 2020.
+
+The team members are [Amos](https://github.com/AmosChan97), [Wei Yang](https://github.com/MeLoveCarbs) and [Iman](https://github.com/namiwa)
 
 ## Hardware used
 Raspberry Pi B and PiCam
@@ -16,7 +22,6 @@ then navigate to front-end directory and run
 ## Available Scripts
 
 In the project directory, you can run:
-
 
 ### `yarn start`
 
